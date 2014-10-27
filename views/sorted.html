@@ -1,0 +1,16 @@
+<div data-options="dxView: { name: 'sorted', title: 'Sorted By' }">
+	<div class="sorted-view"  data-options="dxContent : { targetPlaceholder: 'content' }">
+		<div data-bind="dxList: { items: [
+            { id: 1, name: 'Category' }
+        ] }">
+	        <div data-options="dxTemplate : { name: 'item' }" data-bind="text: name, dxAction: '#categories'" ></div>
+	    </div>
+        
+<!--  		<div data-bind="dxList: { dataSource: sortItems }">
+	        <div data-options="dxTemplate : { name: 'item' }" data-bind="text: name, dxAction: '#categories'" ></div>
+        </div>
+ -->        <hr />
+	</div>
+</div>
+
+
